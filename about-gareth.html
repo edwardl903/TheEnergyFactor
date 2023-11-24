@@ -17,58 +17,19 @@
             background-attachment: fixed; /* Ensures the background stays fixed */
         }
 
-        header {
-            background-color: #004643;
-            padding: 25px 40px;
-            color: #fff;
-            font-family: 'EB Garamond', serif;
-            display: flex;
-          
-        }
-
-        h1 {
-            margin-left: 50px; /* "The Energy Factor" moves to the right basically  */
-        }
-
-        nav {
-            display: flex;
-            background-color: #004643; /* Updated color */
-            padding: 20px 30px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 70px;
-            display: inline-block;
-            transition: background-color 0.3s;
-            font-family: 'EB Garamond', serif;
-            text-align: center;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        section {
+        .about-me-section {
             padding: 20px;
             margin: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-size: 20px;
+
         }
 
-        /* Added style for the image */
-        #background-image {
-            width: 100%; /* Make sure the image spans the full width of the container */
-            height: auto; /* Maintain aspect ratio */
+        .about-me-section img {
+            max-width: 100%; /* Ensure the image does not exceed its container's width */
+            height: auto; /* Maintain the image's aspect ratio */
+            border-radius: 20%; /* Format the image as a circle */
+            margin-bottom: 20px; /* Optional: Add margin to separate the image from text */
         }
     </style>
 </head>
@@ -85,6 +46,55 @@
             <a href="contact-us.html">CONTACT<br>US</a>
         </nav>
     </header>
+
+   
+
+    
+    <!-- Centered title -->
+    <div class="centered-title">
+        <div class = "fml">Professor Gareth Wyn Jones</div>
+    </div>
+    <section class="about-me-section" id="about-gareth">
+        <img src="images/daddy.JPG" alt="Gareth's Photo">
+        <p>Dedicated to the exploration of energy's pivotal role in shaping societies<br>, Professor Gareth Wyn Jones stands as an influential figure 
+            in the field of energy studies.<br>
+            As an Emeritus Professor of plant biology and bio-science at Bangor University,<br>Gareth's expertise extends across the historical, environmental, and societal aspects of energy.</p>
+    </section>
+
+
+
+
+
+    
+    <section id="why-use-less">
+        <h2>Why use less?</h2>
+        <p>Explore the importance of conserving energy and the benefits it brings.</p>
+    </section>
+
+    <section id="about-gareth">
+        <h2>About Gareth</h2>
+        <p>Learn about Gareth and his contributions to the field of energy.</p>
+    </section>
+
+    <section id="energy-research">
+        <h2>Energy Research</h2>
+        <p>Discover the latest advancements and research in the field of energy.</p>
+    </section>
+
+    <section id="test-your-knowledge">
+        <h2>Test your Knowledge!</h2>
+        <p>Take quizzes and tests to enhance your understanding of energy-related topics.</p>
+    </section>
+
+    <section id="what-can-you-do">
+        <h2>What can you do</h2>
+        <p>Find practical tips on what individuals can do to contribute to energy conservation.</p>
+    </section>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for any questions, suggestions, or collaborations.</p>
+    </section>
 
     <section id="why-use-less">
         <h2>Why use less?</h2>
@@ -115,6 +125,7 @@
         <h2>Contact Us</h2>
         <p>Get in touch with us for any questions, suggestions, or collaborations.</p>
     </section>
+
 
     <footer>
         <p>&copy; 2023 The Energy Factor. All rights reserved.</p>
