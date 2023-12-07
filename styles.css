@@ -1,9 +1,12 @@
 
-        body {
+       body {
             font-family: 'EB Garamond', serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-image: url('images/mountain.avif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Ensures the background stays fixed */
         }
 
         header {
