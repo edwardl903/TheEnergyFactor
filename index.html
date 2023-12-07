@@ -7,6 +7,71 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
     <style>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 2.5em;
+        }
+
+        h5 {
+            font-size: 1.5em;
+        }
+
+        h6 {
+            font-size: 1.5em;
+        }
+
+        .glide {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .glide__track {
+            width: 100%;
+            display: flex;
+        }
+
+        .glide__slides {
+            display: flex;
+        }
+
+        .glide__slide {
+            flex: 0 0 50px;
+            margin-right: 10px;
+        }
+
+        .glide__image {
+            width: 100%;
+            height: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .glide__arrows {
+            position: relative;
+            top: -30px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 50px;
+        }
+
+        .glide__arrow {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: #333333;
+            cursor: pointer;
+            outline: none;
+        }
+
     </style>
 </head>
 <body>
@@ -22,6 +87,57 @@
             <a href="contact-us.html">CONTACT<br>US</a>
         </nav>
     </header>
+
+    <div class="container">
+        <h4>Welcome to the Energy Factor</h4>
+    </div>
+
+    <div class="container">
+        <h5>Exploring the evolution of energy <br> and its impact on climate change</h5>
+    </div>
+
+    <div class="container">
+        <p>
+            Discover the journey of energy through time and its profound impact on our planet and society.
+            From the first sparks of fire to the complexities of the modern world, energy has been the driving force behind progress and challenge.
+            Join us in exploring the pivotal moments in energy evolution, the dilemmas we face today, and the choices that shape our future.
+            Dive into interactive experiences, gain insights from experts, and learn how you can make a difference.
+            Together, let's illuminate the path towards a sustainable and energy-conscious world.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                    <div class="glide__slide"><img class="glide__image" src="images/daddy.JPG" alt="Slide 1"></div>
+                    <div class="glide__slide"><img class="glide__image" src="https://placekitten.com/50/50?image=2" alt="Slide 2"></div>
+                    <div class="glide__slide"><img class="glide__image" src="https://placekitten.com/50/50?image=3" alt="Slide 3"></div>
+                    <div class="glide__slide"><img class="glide__image" src="https://placekitten.com/50/50?image=4" alt="Slide 4"></div>
+                    <div class="glide__slide"><img class="glide__image" src="https://placekitten.com/50/50?image=5" alt="Slide 5"></div>
+                </div>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">‹</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">›</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            focusAt: 'center',
+            breakpoints: {
+                800: {
+                    perView: 1
+                }
+            }
+        }).mount();
+    </script>
 
     <section id="why-use-less">
         <h2>Why use less?</h2>
@@ -51,15 +167,7 @@
     <section id="contact-us">
         <h2>Contact Us</h2>
         <p>Get in touch with us for any questions, suggestions, or collaborations.</p>
-    </sectiobody {
-        font-family: 'EB Garamond', serif;
-        margin: 0;
-        padding: 0;
-        background-image: url('images/mountain.avif');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed; /* Ensures the background stays fixed */
-    }n>
+    </section>
 
     <footer>
         <p>&copy; 2023 The Energy Factor. All rights reserved.</p>
