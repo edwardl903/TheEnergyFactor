@@ -9,13 +9,25 @@
             background-attachment: fixed; /* Ensures the background stays fixed */
         }
 
+
         header {
             background-color: #004643;
-            padding: 25px 40px;
+            padding: 15px 30px;
             color: #fff;
             font-family: 'EB Garamond', serif;
             display: flex;
+            justify-content: space-between;
           
+        }
+
+        .logo {
+                display: inline-block;
+                width: 200px;
+                height: auto;
+            }
+
+        .logo img {
+                margin-top: 10px
         }
 
         h1 {
@@ -31,21 +43,27 @@
         nav {
             display: flex;
             background-color: #004643; /* Updated color */
-            padding: 20px 30px;
+            padding: 10px 30px;
+            text-align: right;
+            align-items: right;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            margin-left: 70px;
+            margin-left: 50px;
             display: inline-block;
             transition: background-color 0.3s;
             font-family: 'EB Garamond', serif;
             text-align: center;
+            padding: 5px;
+            border-radius: 10px;
         }
 
         nav a:hover {
-            background-color: #555;
+            background-color: #125c40;
+            text-decoration: none;
+            color: white;
         }
 
         section {
@@ -54,11 +72,10 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: #004643;
             color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
+            text-align: left;
+            padding: 15px;
             bottom: 0;
             width: 100%;
         }
