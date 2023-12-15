@@ -7,52 +7,55 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
+         body {
             font-family: 'EB Garamond', serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('images/mountain.avif');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed; /* Ensures the background stays fixed */
+            background-color: #f2f2f2; /* Set your desired background color */
         }
-
-        header {
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-
-        main {
-            max-width: 600px;
-            margin: 20px auto;
+        .contact-container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white background */
+            border-radius: 10px;
             padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-
+        h1 {
+            font-size: 40px;
+            font-family: EB Garamond;
+            font-weight: normal;
+        }
+        #question {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        #description {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
         label {
             display: block;
             margin-bottom: 8px;
         }
-
         input, textarea {
             width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             box-sizing: border-box;
         }
-
         button {
-            background-color: #333;
+            background-color: #BF6900; /* Set your desired button color */
             color: white;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
-
         button:hover {
-            background-color: #555;
+            background-color: #45a049; /* Set your desired button hover color */
         }
     </style>
 </head>
@@ -72,21 +75,37 @@
 
 
 
-    <main>
-        <form action="#" method="post">
+    <h1>Contact Us</h1>
+        <p id="question">What's on your Mind?</p>
+        <p id="description">Tell us a little bit about yourself and your question, and someone will be in touch with you.</p>
+    
+
+    <div class="contact-container">
+        
+        <form action="submit_form.php" method="post"> <!-- Replace 'submit_form.php' with your form submission script -->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
+            <input type="text" id="name" name="name" placeholder="Write your full name.." required>
+    
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
+            <input type="email" id="email" name="email" placeholder="Write your email address.." required>
+    
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Write your phone number.." required>
+    
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
+            <textarea id="message" name="message" placeholder="Write your message.." rows="4" required></textarea>
+    
             <button type="submit">Submit</button>
         </form>
-    </main>
+    </div>
 
+    <p id="question">What's on your Mind?</p>
+    <p id="question">What's on your Mind?</p>
+    <p id="question">What's on your Mind?</p>
+    <p id="question">What's on your Mind?</p>
+    <p id="question">What's on your Mind?</p>
+    <p id="question">What's on your Mind?</p>
+    <p id="question">What's on your Mind?</p>
     
 
     <footer>
