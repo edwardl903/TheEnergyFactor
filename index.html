@@ -6,18 +6,33 @@
     <title>The Energy Factor</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  
     <style>
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
+        .containertext {
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        body {
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                align-items: center;
+                justify-content: center;
         }
 
         h4 {
-            font-size: 2.5em;
+            font-size: 4em;
+            margin-bottom: 0px;
         }
 
         h5 {
@@ -28,56 +43,42 @@
             font-size: 1.5em;
         }
 
-        .glide {
-            width: 100%;
-            overflow: hidden;
+        .about {
+                background: rgba(211, 249, 181, 0.50); 
+                display: flex;
+                padding: 10px;
+                text-align: center;
+                padding: 25px 25px;
+                align-items: center;
+                justify-content: center;
         }
 
-        .glide__track {
-            width: 100%;
-            display: flex;
+        .carousel-caption {
+                border-radius: 20px;
+                background: rgba(191, 105, 0, 0.80);
+                padding: 20px;
+                float: right;
         }
 
-        .glide__slides {
-            display: flex;
+        .carousel-caption h3 {
+                font-size: 48px;
+                margin-bottom: 35px;
+        }
+        
+        .carousel-caption p {
+                font-size: 36px;
+                margin-bottom: 35px;
         }
 
-        .glide__slide {
-            flex: 0 0 50px;
-            margin-right: 10px;
-        }
-
-        .glide__image {
-            width: 100%;
-            height: 50px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .glide__arrows {
-            position: relative;
-            top: -30px;
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-            width: 50px;
-        }
-
-        .glide__arrow {
-            background: none;
-            border: none;
-            font-size: 20px;
-            color: #333333;
-            cursor: pointer;
-            outline: none;
-        }
+       
 
     </style>
 </head>
 <body>
 
     <header>
-        <h1>The Energy Factor</h1>
+        <a href="index.html" class="logo"><img src="images/EFLogo.png" style="height: 60px;" alt="Energy Factor Logo"></a>
+
         <nav>
             <a href="why-use-less.html">WHY USE<br>LESS?</a>
             <a href="about-gareth.html">ABOUT<br>GARETH</a>
@@ -88,90 +89,121 @@
         </nav>
     </header>
 
-    <div class="container">
-        <h4>Welcome to the Energy Factor</h4>
-    </div>
+    <br><br><br>
+        <h4 style="font-size: 86px;">Welcome to the Energy Factor</h4><br><br>
 
-    <div class="container">
-        <h5>Exploring the evolution of energy <br> and its impact on climate change</h5>
-    </div>
+        <h5 style="font-size: 30px;"">Exploring the evolution of energy  and its <br> impact on climate change</h5> <br><br>
 
-    <div class="container">
+        <img src="images/EFLine.png" style="height: 60px;" alt="Energy Factor Logo">
+
+
+    <div class="containertext">
+        <br>
         <p>
-            Discover the journey of energy through time and its profound impact on our planet and society.
-            From the first sparks of fire to the complexities of the modern world, energy has been the driving force behind progress and challenge.
-            Join us in exploring the pivotal moments in energy evolution, the dilemmas we face today, and the choices that shape our future.
-            Dive into interactive experiences, gain insights from experts, and learn how you can make a difference.
-            Together, let's illuminate the path towards a sustainable and energy-conscious world.
+                Energy has an all-pervasive role in our lives - everything that happens on Earth, 
+                in biology, and even human life and culture, depends on “free” energy.
+                Additionally, exploiting energy from any source allows more work and power, promoting more complexity.
+        </p><br>
+        <p>
+                “All natural processes and all human actions are, in the most fundamental physical sense, transformations of energy. 
+                Civilization’s advances can be seen as a quest for the higher energy use required to produce increased food harvests, 
+                to mobilise a greater output and variety of materials, to produce more, and more diverse goods, to enable higher mobility, 
+                and to create access to virtually unlimited amounts of information” - Vaclav Smil
+        </p><br>
+        <p>
+                Discover the journey of energy through time and its profound impact on our planet and society. From the first sparks of 
+                fire to the complexities of the modern world, energy has been the driving force behind progress and challenge. Join us 
+                in exploring the pivotal moments in energy evolution, the dilemmas we face today, and the choices that shape our future. 
+                Learn how you can make a difference. Together, let's illuminate the path towards a sustainable and energy-conscious world.
         </p>
     </div>
 
-    <div class="container">
-        <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-                <div class="glide__slides">
-                    <div class="glide__slide"><img class="glide__image" src="images/daddy.JPG" alt="Slide 1"></div>
-                    <div class="glide__slide"><img class="glide__image" src="https://placekitten.com/50/50?image=2" alt="Slide 2"></div>
-                    <div class="glide__slide"><img class="glide__image" src="https://placekitten.com/50/50?image=3" alt="Slide 3"></div>
-                    <div class="glide__slide"><img class="glide__image" src="https://placekitten.com/50/50?image=4" alt="Slide 4"></div>
-                    <div class="glide__slide"><img class="glide__image" src="https://placekitten.com/50/50?image=5" alt="Slide 5"></div>
+    <br>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+      
+            <div class="item active">
+              <img src="images/Slide1.png" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Why use less?</h3>
+                <p>A core facet of Gareth Wyn Jones’ research is the importance of decreasing energy use. Learn why!</p>
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="images/SLide2.png" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Where did these ideas come from?</h3>
+                <p>Professor Gareth Wyn Jones’ research is the foundation for this website. Learn more!</p>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="images/Slide3.png" alt="New York" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Want to learn more?</h3>
+                <p>Learn more about Professor Wyn Jones’ and other energy researchers’ work!</p>
+              </div>
+            </div>
+
+            <div class="item">
+                <img src="images/SLide4.png" alt="New York" style="width:100%;">
+                <div class="carousel-caption">
+                  <h3>What can you do?</h3>
+                  <p>Learn more about what you can do to make a difference </p>
                 </div>
-            </div>
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">‹</button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">›</button>
-            </div>
+              </div>
+        
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            startAt: 0,
-            perView: 3,
-            focusAt: 'center',
-            breakpoints: {
-                800: {
-                    perView: 1
-                }
-            }
-        }).mount();
-    </script>
+        <br><br><br>
 
-    <section id="why-use-less">
-        <h2>Why use less?</h2>
-        <p>Explore the importance of conserving energy and the benefits it brings.</p>
-    </section>
+        <div class="about">
+                
+                <img src="images/Gareth.png" style="width: 400px; margin-right: 80px; border-radius: 25px;" alt="Photo of Gareth">
 
-    <section id="about-gareth">
-        <h2>About Gareth</h2>
-        <p>Learn about Gareth and his contributions to the field of energy.</p>
-    </section>
+                <div style="width: 750px; padding: 50px; border-radius: 25px; font-size: 28px;">
+                        <h5><strong>Gareth Wyn Jones</strong></h5><br>
+                        <p>
+                                Gareth Wyn Jones is a Professor Emeritus of plant biology and bioscience at Bangor University. 
+                                His field of study focuses on the history of energy and how it has shaped our society, and its 
+                                implications for climate change. His work is the foundation for this website.        
+                        </p>
+                </div>
 
-    <section id="energy-research">
-        <h2>Energy Research</h2>
-        <p>Discover the latest advancements and research in the field of energy.</p>
-    </section>
+                
 
-    <section id="test-your-knowledge">
-        <h2>Test your Knowledge!</h2>
-        <p>Take quizzes and tests to enhance your understanding of energy-related topics.</p>
-    </section>
+        </div>
 
-    <section id="what-can-you-do">
-        <h2>What can you do</h2>
-        <p>Find practical tips on what individuals can do to contribute to energy conservation.</p>
-    </section>
-
-    <section id="contact-us">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for any questions, suggestions, or collaborations.</p>
-    </section>
 
     <footer>
-        <p>&copy; 2023 The Energy Factor. All rights reserved.</p>
+        <br>
+        <br>
+        <br>
+        <a href="index.html" class="logo"><img src="images/EFLogo.png" style="height: 60px;" alt="Energy Factor Logo"></a>
     </footer>
 
 </body>
 </html>
+
