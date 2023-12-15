@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
     <style>
-         body {
+        body {
             font-family: 'EB Garamond', serif;
             background-color: #f2f2f2; /* Set your desired background color */
         }
         .contact-container {
-            width: 50%;
+            width: 70%;
             margin: 50px auto;
-            background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white background */
+            background-color: rgba(0, 70, 67, 0.60); /* 50% transparent white background */
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
         h1 {
             font-size: 40px;
-            font-family: EB Garamond;
+            font-family: 'EB Garamond', serif;
             font-weight: normal;
         }
         #question {
@@ -37,14 +37,20 @@
         label {
             display: block;
             margin-bottom: 8px;
+            color: white; /* Set label text color to white */
         }
         input, textarea {
-            width: 100%;
+            width: calc(100% - 50px); /* Set your desired fixed width */
+            margin: 0 auto; /* Center the input fields */
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
+            display: block;
+        }
+        textarea {
+            height: 150px; /* Adjust the height as needed */
         }
         button {
             background-color: #BF6900; /* Set your desired button color */
@@ -53,7 +59,10 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            display: block;
+            margin: 0 auto; /* Center the button */
         }
+        
         button:hover {
             background-color: #45a049; /* Set your desired button hover color */
         }
@@ -73,13 +82,10 @@
         </nav>
     </header>
 
-
-
     <h1>Contact Us</h1>
-        <p id="question">What's on your Mind?</p>
-        <p id="description">Tell us a little bit about yourself and your question, and someone will be in touch with you.</p>
+    <p id="question">What's on your Mind?</p>
+    <p id="description">Tell us a little bit about yourself and your question, and someone will be in touch with you.</p>
     
-
     <div class="contact-container">
         
         <form action="submit_form.php" method="post"> <!-- Replace 'submit_form.php' with your form submission script -->
@@ -93,7 +99,7 @@
             <input type="tel" id="phone" name="phone" placeholder="Write your phone number.." required>
     
             <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Write your message.." rows="4" required></textarea>
+            <textarea id="message" name="message" placeholder="Write your message.." required></textarea>
     
             <button type="submit">Submit</button>
         </form>
@@ -107,7 +113,6 @@
     <p id="question">What's on your Mind?</p>
     <p id="question">What's on your Mind?</p>
     
-
     <footer>
         <p>&copy; 2023 The Energy Factor. All rights reserved.</p>
     </footer>
