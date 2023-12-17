@@ -17,35 +17,63 @@
             background-attachment: fixed; /* Ensures the background stays fixed */
         }
 
+        centered-title {
+            text-align: left;
+        }
+
+        .fml {
+            text-align: left;
+            margin-left: 90px;
+            font-weight: bold;
+        }
+
         .about-me-section {
+            display: flex;
+            justify-content: space-around;
             padding: 20px;
             margin: 20px;
-            text-align: center;
             font-size: 20px;
-
         }
 
         .about-me-section img {
-            max-width: 100%; /* Ensure the image does not exceed its container's width */
-            height: auto; /* Maintain the image's aspect ratio */
-            border-radius: 20%; /* Format the image as a circle */
-            margin-bottom: 20px; /* Optional: Add margin to separate the image from text */
+            max-width: 40%; /* Adjust the image width */
+            height: auto;
+            border-radius: 20%;
+            margin-right: 20px;
+            margin-left: 50px;
+        }
+
+        .about-me-text {
+            flex: 1;
+            margin-top: 30px;
+            margin-left: 100px;
+            margin-right: 300px;
+            font-size: 20px;
+            
         }
 
         /* Green background section */
         .green-background {
             background-color: rgba(211, 249, 181, 0.50); /* Green with 50% transparency */
-            padding: 20px;
-            text-align: center;
+            text-align: left;
             color: black; /* Text color for better contrast */
+            width: 100%;
+            padding: 20px;
+            margin-bottom: -20px;
         }
 
         /* Blue background section */
         .blue-background {
-            background-color: rgba(159, 249, 181, 0.50); /* Blue with 50% transparency */
-            padding: 20px;
-            text-align: center;
+             /* Blue with 50% transparency */
+            text-align: left;
             color: black; /* Text color for better contrast */
+            width: 100%;
+            margin-bottom: -20px;
+        }
+
+        .background-text {
+            margin-left: 50px;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -67,17 +95,19 @@
    
 
     
+            <h1>About Gareth</h1>
 
-    <!-- Centered title -->
-    <div class="centered-title">
-        <div class = "fml">Professor Gareth Wyn Jones</div>
-    </div>
-    <section class="about-me-section" id="about-gareth">
-        <img src="images/daddy.JPG" alt="Gareth's Photo">
-        <p>Dedicated to the exploration of energy's pivotal role in shaping societies<br>, Professor Gareth Wyn Jones stands as an influential figure 
-            in the field of energy studies.<br>
-            As an Emeritus Professor of plant biology and bio-science at Bangor University,<br>Gareth's expertise extends across the historical, environmental, and societal aspects of energy.</p>
-    </section>
+            <!-- Centered title -->
+            <div class="centered-title">
+                <div class="fml">Meet Professor Gareth Wyn Jones</div>
+            </div>
+            
+            <section class="about-me-section" id="about-gareth">
+                <img src="images/Gareth.png" alt="Gareth's Photo">
+                <div class="about-me-text">
+                    <p>Dedicated to the exploration of energy's pivotal role in shaping societies, Professor Gareth Wyn Jones stands as an influential figure in the field of energy studies. As an Emeritus Professor of plant biology and bio-science at Bangor University, Gareth's expertise extends across the historical, environmental, and societal aspects of energy.</p>
+                </div>
+            </section>
 
 
 
@@ -85,7 +115,8 @@
     <!-- Your existing content here -->
 
     <!-- Green background section -->
-    <section class="green-background">
+<section class="green-background">
+    <div class="background-text">
         <h2>A quick Q&amp;A with Gareth</h2>
         <p>
             <strong>Q:</strong> If you were just starting out on your energy journey, what would you want your younger self to know?
@@ -97,10 +128,12 @@
             <strong>Q:</strong> What classes have you liked teaching in the past?
             <br><strong>A:</strong> a] Soil-plant relations (the continuity between geology soils microbes and plants): b] Basic biophysics and c] Sustainability
         </p>
-    </section>
+    </div>
+</section>
 
-    <!-- Blue background section -->
-    <section class="blue-background">
+<!-- Blue background section -->
+<section class="blue-background">
+    <div class="background-text">
         <h2>Favorite Quotes</h2>
         <p>
             “It is important to realize that in physics today, we have no knowledge of what energy is.” - Richard P. Feynman
@@ -111,29 +144,18 @@
             <br>
             “Energy is a very subtle concept. It is very, very difficult to get right.” - Richard P. Feynman
         </p>
-    </section>
+    </div>
+</section>
 
     <!-- Gareth’s Research section -->
     <section class="green-background">
+        <div class="background-text">
         <h2>Gareth’s Research</h2>
         <p>Learn more about Gareth’s book and research <a href="link-to-research-page">here</a>.</p>
+    </div>
     </section>
 
-    <section>
-        <h2>Gareth’s Research</h2>
-        <p>Learn more about Gareth’s book and research <a href="link-to-research-page">here</a>.</p>
-    </section>
-
-    <section>
-        <h2>Gareth’s Research</h2>
-        <p>Learn more about Gareth’s book and research <a href="link-to-research-page">here</a>.</p>
-    </section>
-
-    <section>
-        <h2>Gareth’s Research</h2>
-        <p>Learn more about Gareth’s book and research <a href="link-to-research-page">here</a>.</p>
-    </section>
-
+   
 
 
 
