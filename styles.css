@@ -93,3 +93,31 @@
             color: #fff; /* Set text color to make it visible against the background */
         }
 
+
+
+
+
+        /*all this is for the text behind color*/
+        /* Green background section */
+        .green-background {
+            background-color: rgba(211, 249, 181, 0.50); /* Green with 50% transparency */
+            text-align: left;
+            color: black; /* Text color for better contrast */
+            width: 100%;
+            padding: 20px;
+            margin-bottom: -20px;
+        }
+
+        /* Blue background section */
+        .blue-background {
+             /* Blue with 50% transparency */
+            text-align: left;
+            color: black; /* Text color for better contrast */
+            width: 100%;
+            margin-bottom: -20px;
+        }
+
+        .background-text {
+            margin-left: 50px;
+            font-size: 20px;
+        }
